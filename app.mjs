@@ -16,7 +16,7 @@ app.use(bp.json())
 app.set('view engine', 'ejs');
 
 // database connection
-const dbURI = 'mongodb+srv://withAsilbeck:wBuL9xsCMCgikTe7@cluster0.x7vdmpi.mongodb.net/auth?retryWrites=true&w=majority&appName=Cluster0';
+const dbURI = 'mongodb+srv://<your login>:<password>@cluster0.x7vdmpi.mongodb.net/auth?retryWrites=true&w=majority&appName=Cluster0';
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true })
   .then((result) => app.listen(8000))
   .catch((err) => console.log(err));
